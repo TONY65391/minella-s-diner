@@ -1,0 +1,58 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Haven - Welcome to our Home Decor</title>
+</head>
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+        #head h2 {float: left; margin: 15px; padding: 5px;}
+        #head {height: 80px;}
+        #head p {display: inline; margin: 25px 8px;  float: right;}
+        .nav div {height: 2px; background: black; margin: 4px; border-radius: 15px; transition: 0.4s;}
+        .nav {float: right; margin: 30px;}
+        .one {width: 17px;}
+        .two {width: 12px;}
+        .three {width: 20px;}
+        .nav:hover div {width: 30px; transition: 0.4s;}
+        #ops {padding: 15px; color: rgb(124, 122, 122);}
+        img {float: left; margin: 5px;}
+        img:hover {border: 1px solid rgb(170, 166, 166);}
+        @media screen and (max-width:650px) {
+            #head p {display: none;}   
+            img {width: 45%;}         
+        }
+        @media screen and (min-width:650px) {
+            .nav {display: none;}
+        }
+        @media screen and (max-width:500px) {
+            #ops {width: 100%; float: left; padding: 15px;}      
+        }
+    </style>
+<body>
+    <div id="head">
+        <h2>Urban Haven</h2>
+        <p>Medium Family</p>        <p>Large Family</p>          <p>Family</p>           <p>Singles</p>
+        <p>Cart</p>     <p style="color: blue;">Home</p>
+        <div class="nav">
+            <a href="">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </a>
+        </div>
+    </div>
+    <p style="padding: 15px; margin-top: 3%; font-size: 30;">Shop</p>
+    <div style="height: 60px;">
+        <p id="ops" style="float: left;">Showing 1 - 12 of 19 results</p>
+        <p id="ops" style="float: right;">Default Sorting</p>
+    </div>
+    <div style="width: 95%; margin: auto;">
+        <img style="max-width: 100%;" src="https://urban.haven.peepdata.com/wp-content/uploads/2024/12/THE-BEST-Coffee-Table-For-2024-_-Homary-300x300.jpg" alt="">
+        <img src="https://urban.haven.peepdata.com/wp-content/uploads/2024/12/Walker-Edison-64-Modern-Metal-Arch-Bookshelf-Grey-wash-1-300x300.jpg" alt="">
+        <img src="https://urban.haven.peepdata.com/wp-content/uploads/2024/12/Nordic-Simple-Luxury-LED-Pendant-Lights-Bedroom-Living-Room-Pendant-Lamp-Modern-Bar-Restaurant-Dining-Room-Kitchen-Hanging-Lamps-Pendant-Lights-_-Diameter-50cm-300x300.jpg" alt="">
+        <img src="https://urban.haven.peepdata.com/wp-content/uploads/2024/12/Bella-Crushed-Velvet-3-Seater-Sofa-300x300.jpg" alt="">
+    </div>
+</body>
+</html>
